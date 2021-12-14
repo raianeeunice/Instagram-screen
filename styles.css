@@ -1,0 +1,195 @@
+.body {
+    background-color: #fafafa;
+}
+
+.nav-top {
+    height: 63px; 
+    background-color: white !important; 
+    border-top:0.5px solid #dbdbdb; 
+    border-bottom:1px solid #dbdbdb;
+}
+
+.nav-container {
+    padding-left: 25% !important; 
+    padding-right: 25% !important;
+}
+
+@media screen and (max-width: 1605px) {
+    .nav-container {
+        padding-left: 20% !important; 
+        padding-right: 20% !important;
+    }
+  }
+
+@media screen and (max-width: 992px) {
+    .nav-container {
+        padding-left: 5% !important; 
+        padding-right: 5% !important;
+    }
+}
+
+.img-nav {
+    height: 100%;
+    width: 100%;
+    border-radius: 9999px;
+    object-fit: cover;
+    object-position: center;
+    vertical-align: unset; /*Deixou a imagem certinha, mas não sabemos o motivo*/
+}
+
+.gup2{
+    height: 25px;
+    width: 25px;
+    border-radius: 9999px; /*Para arredondar as bordas*/
+    border: 2px solid rgb(177, 169, 169); 
+    padding: 1px; /*Antes da borda*/
+    display: inline-block;
+}
+
+.img-profile {
+    height: 100%;
+    width: 100%;
+    border-radius: 9999px;
+    object-fit: cover;
+    object-position: center;
+
+}
+
+.profile{
+        height: 150px;
+        width: 150px;
+        border-radius: 9999px; /*Para arredondar as bordas*/
+        border: 2px solid rgb(177, 169, 169); 
+        padding: 2px; /*Antes da borda*/
+    
+}
+
+.username {
+    font-weight: 300; font-size: 28px;
+}
+
+.name {
+    font-size: 16px; display: inline; font-weight: 600 !important;
+}
+
+.profile-datas {
+    font-size: 16px;
+}
+
+.profile-desc {
+    font-size: 16px; 
+}
+
+.nav-feed {
+    border-bottom: none !important; 
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.nav-link-1 {
+    color: #495057;
+    background-color: #fafafa !important;
+    border-color: gray #fff #fff !important;
+    border-top-right-radius: .0rem !important;
+    border-top-left-radius: .0rem !important;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.nav-link-2 {
+    color: #a2a8af;
+    background-color: #fafafa !important;
+    border-color: #fff #fff #fff !important;
+    border-top-right-radius: .0rem !important;
+    border-top-left-radius: .0rem !important;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.card {
+    border: 0px solid rgba(0,0,0,.125) !important;
+    border-radius: .0rem !important;
+}
+
+/* !Important é para valer o que quero, sobreescrever, e não o que já vem pré definido pelo Bootstrap*/
+
+.card-img-top {
+    border-top-left-radius: 0rem !important; /*usamos para deixar os cantos sem estarem arredondados*/
+    border-top-right-radius: 0rem !important;
+    width: 100%; /*Não criamos uma div por fora, pois não colocamos bordas. A largura do pai ficou 4/12 para cada img. Ai usamos 100% dessa largura pré definida pelo Bootstrap (col-4)*/ 
+    height: 300px; /*Col-4 só definia a largura. Nesse caso precisamos definir uma altura para todas as imagens*/
+    object-fit: cover; 
+    object-position: center;
+
+}
+
+.stories-text{
+    
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.stories{
+    display: flex; /*Para deixá-las organizadas em 3 colunas que queríamos*/
+    flex-direction: column; /*Usamos para deixar a imagem e texto alinhados verticalmente*/
+    margin-right: 20px; /*Pra dar o espaçamento. Depois da borda.*/
+    align-items: center; /*Para alinhar no texto e imagem no centro*/
+    cursor: pointer; /*A mãozinha fofinha*/
+}
+
+.circle{
+    height: 75px;
+    width: 75px;
+    border-radius: 9999px; /*Para arredondar as bordas*/
+    border: 2px solid rgb(177, 169, 169); 
+    padding: 2px; /*Antes da borda*/
+}
+
+.circle-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* fit significa "caber" em inglês*/ 
+    /*cover: cortar a imagem dentro do tamanho que defini anteriormente*/
+    /* fill: encher. Vai esticar a imagem */
+    /* contain: conter. Vai adaptar a imagem dentro do tamanho pré definido */
+    object-position: center;
+    border-radius: 99999px; /*Arredondar a imagem*/
+}
+
+.gup{
+    display: flex;
+    flex-direction: row; /*Para deixar em linha, porém não precisa pois é um comportamento padrão*/
+}
+
+.form-control {
+    border-radius: .15rem !important;
+    padding: 0% !important; 
+    background-color: #fafafa !important; 
+    text-align: center; 
+    font-size: 15px !important;
+}
+
+.icons {
+    padding: 4%; 
+    font-size: 25px;
+}
+
+.button-edit {
+    color: black !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    border-color: #dae1e7 !important;
+}
+
+.btn {
+    padding: .100rem .50rem !important;
+}
+
+.send{
+    padding: 4%; 
+    font-size: 25px;
+    color: rgb(59, 59, 59);
+    }
